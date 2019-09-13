@@ -1,0 +1,31 @@
+1. Create an abstract class Shape that will have abstract methods:
+                - calculateArea();
+                - calculatePerimeter();
+                - showArea()       // will print shape type and area
+                - showPerimeter()  // will print shape type and perimeter
+                **** Shape Type should be an ENUM
+Create subclasses Rectangle and Circle of Shape class and implement abstract methods.
+Create a class Square that extends class Rectangle.
+Initialize all objects and print results.
+
+Implement same exercise using interface Shape;
+
+2. BookStore Project (use Interfaces and Abstract classes)
+Define BookStore witch will provide the following actions:
+                - getAllBooks, getBooksByGenre addBook, deleteBook, findBook, bookExists
+Define a class that will implement BookStore interface. As data container use Map to store all Books from Store.
+Define a class Book with following fields:
+- genre (Fantasy, Horror, Detective, Action) as ENUM
+- id  - random number from 1 - 1000
+- name
+- price
+
+Initialize BookStore object.
+Apply all actions of book store.
+Add possibility to find all books with price in range [minPrice, maxPrice]
+Add possibility to find all books of specific genre with price in range [minPrice, maxPrice]
+    Custom exception
+    unit test for all methods
+
+
+3. Create a program example to explain the concepts of Generic class and interface.
