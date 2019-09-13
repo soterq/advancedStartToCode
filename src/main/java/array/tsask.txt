@@ -1,0 +1,45 @@
+Here is a list of exercises to work with 1D Arrays (Vector) / 2D Arrays (Matrix) / ArrayList (List):
+
+All you need to implement tasks:
+1.	IDE: IntelliJ IDEA community edition
+2.	Java JDK 1.8
+
+Implement all this tasks using different types of arrays:
+•	String[]
+•	int[]
+•	String[,]
+•	int[,]
+•	List<String>
+•	List<Integer>
+
+1. Initialize and print all elements of an array
+2. Sort a integer/string array
+3. Calculate sum values of an array and calculate the average value of array elements
+4. Check if an array contains a specific value
+5. Find the index of an array element
+6. Remove a specific element from an array and insert an element (specific position) into an array
+7. Copy an array by iterating the array
+8. Find the maximum and minimum value of an array
+9. Reverse an array of integer/string values
+10. Find the duplicate values of an array of integer/string values
+11. Find the common elements between two arrays (integer/string values)
+12. Remove duplicate elements from an array
+13. Find the number of even and odd integers in a given array of integers
+14. Convert an array (vector) to ArrayList and to convert an ArrayList to an array (vector)
+15. Find all pairs of two elements of a given integer array where sum of the two elements is equal to a given integer
+    Sample array: [1,5,4,2,6,0] > Target value: 6
+16. Cyclically rotate a given array clockwise/anticlockwise by one (or by specific step)
+17. Remove a specific sub-array from an array.
+18. Insert a specific sub-array in to an array.
+19. Suppose that we create an array A of GameEntry objects, which has an integer
+    scores field, and we clone A and store the result in an array B. If we then
+    immediately set A [4].score equal to 550, what is the score value of the
+    GameEntry object referenced by B[4]?
+20. Write a short Java program that takes two arrays a and b of length n storing int
+    values, and returns the dot product of a and b. That is, it returns an array c of
+    length n such that c[i] = a[i] · b[i], for i = 0,… ,n − 1.
+21. Calcuate the factorial (without recursion and with recursion) for each element from an integer array
+    and print an array that will contains factorial result for each element from first array.
+
+If you have any questions don’t hesitate to ask.
+s
