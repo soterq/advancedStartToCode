@@ -1,0 +1,33 @@
+[ {
+  "Id" : 2,
+  "Name" : "Ana",
+  "Surname" : "Ursu",
+  "UserName" : "A_Ursu",
+  "Role" : "NETWORK_ADMINISTRATOR",
+  "Department" : "DEV",
+  "Password" : "123456"
+}, {
+  "Id" : 1,
+  "Name" : "Derrick",
+  "Surname" : "Rose",
+  "UserName" : "D_Rose",
+  "Role" : "IT_MANAGER",
+  "Department" : "DEV",
+  "Password" : "qwerty123"
+}, {
+  "Id" : 3,
+  "Name" : "John",
+  "Surname" : "Mic",
+  "UserName" : "J_Mic",
+  "Role" : "AUTOMATION_QA",
+  "Department" : "QA",
+  "Password" : "mic1"
+}, {
+  "Id" : 4,
+  "Name" : "Mary",
+  "Surname" : "Jonson",
+  "UserName" : "MarryMe",
+  "Role" : "IT_MANAGER",
+  "Department" : "TEH_SUPPORT",
+  "Password" : "qwe"
+} ]

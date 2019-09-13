@@ -1,0 +1,75 @@
+For To-Do List App task also implement a Logger  (log4j or slf4j) that will log all tasks actions and exceptions in a log file.
+Also use custom exceptions as much as possible.
+
+TREE, MAP, HashSet
+
+1. Initialize a hash set and build unit tests to verify following actions:
+   - append the specified element to the end of a hash set
+   - get the number of elements in a hash set
+   - remove the specified element from hash set
+   - remove all elements from hash set
+   - convert a hash set to a List/ArrayList
+   - clone a hash set to another hash set
+   - compare two sets and retain elements which are same on both sets
+
+2. Define a class JsonData that will initialize a hash map and will implement following actions:
+                (you define a json structure)
+   - read a json from file and associate the specified values with the specified key (provide posibility to have multiple values for one key).
+   - count the number of key-value mappings in a map
+   - copy all of the mappings from the specified map to another map
+   - remove all of the mappings from a map
+   - test if a map contains a mapping for the specified key
+   - test if a map contains a mapping for the specified value
+   - get a set view of the keys contained in this map
+   - get a collection view of the values contained in this map
+
+   Make JsonData generic class to define hash map key value type of String or Integer.
+   Write unit test to verify JsonData implementation.
+
+3. Create a java program to create and initialize a Tree object and dipslay all tree nodes.
+                Each Tree node should have following fields and methods:
+                - name
+                - level
+                - children
+                - toString() - print all information about current node
+                The Tree object should have following methods:
+                - addNode
+                - removeNode
+                - findNode
+                - calculateDepth for a specific node
+                - showPath for a specific node
+                - showTree - print the entire tree to console with indentention.
+
+4. Create a Tree that will contains all folders and files from a specified directory.
+                Tree node should contain:
+                - type (Directory or File)
+                - name
+                - path
+
+  Example:
+                Directory Path: path="C:\Users\{USER}\Documents"
+                Tree docTree = new Tree(path)
+                docTree.buildTree() // for this method calculate the duration time
+                docTree.showTree()
+
+REAL APPLICATION
+
+5. Create a To-Do List App (with or without GUI - you decide) that will provide following functionality (apply OOP concepts):
+                - To create tasks so I can remember to do things
+                - When I create task a should specify:
+                                - task name
+                                - task description
+                                - task priority
+                                - start date and duration (work days)
+                                - .... (add other information to the task if you think you need it)
+                - Task should have 3 state: Created, InProgress and Completed
+                - To have ability to change state of a specific task.
+                - To add notes to a task before it is completed
+                - To view added notes for a specific task.
+                - To view all available tasks.
+                - To view all created tasks, unfinished tasks and completed tasks.
+                - To sort and view unfinished tasks by priority - Ascending/Descending
+                - To have ability to export my task list as a json file.
+                - To have ability to import my task list from a json file.
+Use MAVEN as building automation tool for the project.
+Create Unit tests to test the application.
