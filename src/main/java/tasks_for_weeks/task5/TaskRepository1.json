@@ -119,83 +119,6 @@
   "TaskStateHistory" : [ ],
   "TaskAssignedToHistories" : [ ]
 }, {
-  "Id" : 8,
-  "Name" : "new test",
-  "Description" : "new test decription",
-  "Priority" : "MEDIUM",
-  "StartDate" : "2019/09/13 09:27:24",
-  "Duration" : {
-    "hour" : 2,
-    "minutes" : 0
-  },
-  "State" : "CREATED",
-  "CreatedBy" : {
-    "Id" : 1,
-    "Name" : "Derrick",
-    "Surname" : "Rose",
-    "UserName" : "D_Rose",
-    "Role" : "IT_MANAGER",
-    "Department" : "DEV",
-    "Password" : "qwerty123"
-  },
-  "AssignedTo" : {
-    "Id" : 1,
-    "Name" : "Derrick",
-    "Surname" : "Rose",
-    "UserName" : "D_Rose",
-    "Role" : "IT_MANAGER",
-    "Department" : "DEV",
-    "Password" : "qwerty123"
-  },
-  "Notes" : [ ],
-  "TaskStateHistory" : [ ],
-  "TaskAssignedToHistories" : [ ]
-}, {
-  "Id" : 6,
-  "Name" : "test",
-  "Description" : "test desccription",
-  "Priority" : "MEDIUM",
-  "StartDate" : "2019/09/12 13:45:05",
-  "Duration" : {
-    "hour" : 2,
-    "minutes" : 0
-  },
-  "State" : "CREATED",
-  "CreatedBy" : {
-    "Id" : 2,
-    "Name" : "Ana",
-    "Surname" : "Ursu",
-    "UserName" : "A_Ursu",
-    "Role" : "NETWORK_ADMINISTRATOR",
-    "Department" : "DEV",
-    "Password" : "123456"
-  },
-  "AssignedTo" : {
-    "Id" : 3,
-    "Name" : "John",
-    "Surname" : "Mic",
-    "UserName" : "J_Mic",
-    "Role" : "AUTOMATION_QA",
-    "Department" : "QA",
-    "Password" : "mic1"
-  },
-  "Notes" : [ {
-    "Id" : 1,
-    "Person" : {
-      "Id" : 2,
-      "Name" : "Ana",
-      "Surname" : "Ursu",
-      "UserName" : "A_Ursu",
-      "Role" : "NETWORK_ADMINISTRATOR",
-      "Department" : "DEV",
-      "Password" : "123456"
-    },
-    "Note" : "test",
-    "Reply" : [ ]
-  } ],
-  "TaskStateHistory" : [ ],
-  "TaskAssignedToHistories" : [ ]
-}, {
   "Id" : 2,
   "Name" : "Logout",
   "Description" : "User should be able to logout from fis account",
@@ -478,4 +401,81 @@
       "Password" : "mic1"
     }
   } ]
+}, {
+  "Id" : 6,
+  "Name" : "test",
+  "Description" : "test desccription",
+  "Priority" : "MEDIUM",
+  "StartDate" : "2019/09/12 13:45:05",
+  "Duration" : {
+    "hour" : 2,
+    "minutes" : 0
+  },
+  "State" : "CREATED",
+  "CreatedBy" : {
+    "Id" : 2,
+    "Name" : "Ana",
+    "Surname" : "Ursu",
+    "UserName" : "A_Ursu",
+    "Role" : "NETWORK_ADMINISTRATOR",
+    "Department" : "DEV",
+    "Password" : "123456"
+  },
+  "AssignedTo" : {
+    "Id" : 3,
+    "Name" : "John",
+    "Surname" : "Mic",
+    "UserName" : "J_Mic",
+    "Role" : "AUTOMATION_QA",
+    "Department" : "QA",
+    "Password" : "mic1"
+  },
+  "Notes" : [ {
+    "Id" : 1,
+    "Person" : {
+      "Id" : 2,
+      "Name" : "Ana",
+      "Surname" : "Ursu",
+      "UserName" : "A_Ursu",
+      "Role" : "NETWORK_ADMINISTRATOR",
+      "Department" : "DEV",
+      "Password" : "123456"
+    },
+    "Note" : "test",
+    "Reply" : [ ]
+  } ],
+  "TaskStateHistory" : [ ],
+  "TaskAssignedToHistories" : [ ]
+}, {
+  "Id" : 7,
+  "Name" : "test",
+  "Description" : "test description",
+  "Priority" : "MEDIUM",
+  "StartDate" : "2019/09/13 09:16:22",
+  "Duration" : {
+    "hour" : 2,
+    "minutes" : 0
+  },
+  "State" : "CREATED",
+  "CreatedBy" : {
+    "Id" : 1,
+    "Name" : "Derrick",
+    "Surname" : "Rose",
+    "UserName" : "D_Rose",
+    "Role" : "IT_MANAGER",
+    "Department" : "DEV",
+    "Password" : "qwerty123"
+  },
+  "AssignedTo" : {
+    "Id" : 1,
+    "Name" : "Derrick",
+    "Surname" : "Rose",
+    "UserName" : "D_Rose",
+    "Role" : "IT_MANAGER",
+    "Department" : "DEV",
+    "Password" : "qwerty123"
+  },
+  "Notes" : [ ],
+  "TaskStateHistory" : [ ],
+  "TaskAssignedToHistories" : [ ]
 } ]

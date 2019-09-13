@@ -213,12 +213,12 @@
   "Name" : "Login",
   "Description" : "Login should contains fields for authentication and login button",
   "Priority" : "CRITICAL",
-  "StartDate" : "2019/09/12 15:06:29",
+  "StartDate" : "2019/09/12 12:53:42",
   "Duration" : {
     "hour" : 20,
     "minutes" : 30
   },
-  "State" : "CREATED",
+  "State" : "COMPLETED",
   "CreatedBy" : {
     "Id" : 1,
     "Name" : "Derrick",
@@ -313,34 +313,6 @@
     },
     "PreviousState" : "IN_PROGRESS",
     "CurrentState" : "COMPLETED"
-  }, {
-    "PreviousActionDate" : "2019/09/12 12:53:42",
-    "CurrentDate" : "2019/09/12 14:55:45",
-    "ModifiedBy" : {
-      "Id" : 1,
-      "Name" : "Derrick",
-      "Surname" : "Rose",
-      "UserName" : "D_Rose",
-      "Role" : "IT_MANAGER",
-      "Department" : "DEV",
-      "Password" : "qwerty123"
-    },
-    "PreviousState" : "COMPLETED",
-    "CurrentState" : "IN_PROGRESS"
-  }, {
-    "PreviousActionDate" : "2019/09/12 14:55:45",
-    "CurrentDate" : "2019/09/12 15:06:29",
-    "ModifiedBy" : {
-      "Id" : 1,
-      "Name" : "Derrick",
-      "Surname" : "Rose",
-      "UserName" : "D_Rose",
-      "Role" : "IT_MANAGER",
-      "Department" : "DEV",
-      "Password" : "qwerty123"
-    },
-    "PreviousState" : "IN_PROGRESS",
-    "CurrentState" : "CREATED"
   } ],
   "TaskAssignedToHistories" : [ {
     "CurrentDate" : "2019/09/11 13:33:15",
@@ -434,48 +406,16 @@
     "Id" : 1,
     "Person" : {
       "Id" : 2,
-      "Name" : "Ana",
-      "Surname" : "Ursu",
-      "UserName" : "A_Ursu",
+      "Name" : "John",
+      "Surname" : "Mic",
+      "UserName" : "J_Mic",
       "Role" : "NETWORK_ADMINISTRATOR",
       "Department" : "DEV",
       "Password" : "123456"
     },
-    "Note" : "test",
+    "Note" : " new comment",
     "Reply" : [ ]
   } ],
-  "TaskStateHistory" : [ ],
-  "TaskAssignedToHistories" : [ ]
-}, {
-  "Id" : 7,
-  "Name" : "test",
-  "Description" : "test description",
-  "Priority" : "MEDIUM",
-  "StartDate" : "2019/09/13 09:16:22",
-  "Duration" : {
-    "hour" : 2,
-    "minutes" : 0
-  },
-  "State" : "CREATED",
-  "CreatedBy" : {
-    "Id" : 1,
-    "Name" : "Derrick",
-    "Surname" : "Rose",
-    "UserName" : "D_Rose",
-    "Role" : "IT_MANAGER",
-    "Department" : "DEV",
-    "Password" : "qwerty123"
-  },
-  "AssignedTo" : {
-    "Id" : 1,
-    "Name" : "Derrick",
-    "Surname" : "Rose",
-    "UserName" : "D_Rose",
-    "Role" : "IT_MANAGER",
-    "Department" : "DEV",
-    "Password" : "qwerty123"
-  },
-  "Notes" : [ ],
   "TaskStateHistory" : [ ],
   "TaskAssignedToHistories" : [ ]
 } ]

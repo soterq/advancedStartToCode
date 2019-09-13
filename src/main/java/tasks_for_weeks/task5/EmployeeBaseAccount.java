@@ -502,6 +502,7 @@ public class EmployeeBaseAccount {
             return;
         }
         getTaskReporter().importTaskData(pathToImport);
+        getTaskReporter().exportData(path);
     }
 
     void changePassword() throws Exception {

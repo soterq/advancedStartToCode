@@ -491,9 +491,9 @@ public class TaskReporterImpl implements TaskReporter {
     @Override
     public void importTaskData(String path) throws Exception {
         ObjectMapper mapper = new ObjectMapper();
-        List<Task> importedTaskList;
+        List<Task> importedtask;
         try {
-            importedTaskList = mapper.readValue(new File(path), new TypeReference<List<Task>>() {
+            importedtask = mapper.readValue(new File(path), new TypeReference<List<Task>>() {
             });
         } catch (JsonMappingException e) {
             log.error("Json file from '" + path + "' is broken ");
@@ -502,38 +502,46 @@ public class TaskReporterImpl implements TaskReporter {
             throw new IllegalActionException("Impossible to lod data from file, file with path '" + path + "' do not exist \n" + e);
         }
 
-        Iterator iter;
-        for (Task importedTask : importedTaskList) {
-            iter = taskList.iterator();
-            while (iter.hasNext()){
-                if(importedTask.getTaskId()==)
+        Scanner scn = new Scanner(System.in);
+        System.out.println("Some imported task can have the same id with task which is already present\n"
+                + "We can generate new id for imported task\n" +
+                "Do you want to generate new id for task who is repeated\n" +
+                "1 - Yes\n2 - No");
+        int option = scn.nextInt();
+        if (option == 1) {
+            for (Task task : importedtask) {
+                if (containsId(task.getTaskId())) {
+                    task.setTaskId(generateId());
+                    taskList.add(task);
+                } else {
+                    taskList.add(task);
+                }
             }
+        } else {
+            taskList.addAll(importedtask);
         }
 
+    }
 
-
-        Scanner scn = new Scanner(System.in);
-        for (Task importedTask : importedTaskList) {
-            for (Task currentTask : taskList) {
-                if (importedTask.getTaskId() == currentTask.getTaskId()) {
-                    System.out.println("Task with id " + importedTask.getTaskId() + " is already present in task list, and can not be added because id should be unique\n" +
-                            "We can generate another id for current task \n" +
-                            "Do you want to generate new id for current task\n" +
-                            "1 - Yes\n2 - No");
-                    int option = scn.nextInt();
-                    if (option == 1) {
-                        importedTask.setTaskId(generateId());
-                        taskList.add(importedTask);
-
-                    } else {
-                        System.out.println("Task was not added");
+    private void regenerateId() {
+        for (int i = 0; i < taskList.size(); i++) {
+            for (int j = 0; j < taskList.size(); j++) {
+                if (i != j) {
+                    if (taskList.get(i).getTaskId() == taskList.get(j).getTaskId()) {
+                        taskList.get(j).setTaskId(generateId());
                     }
-                } else {
-                    taskList.add(importedTask);
                 }
             }
         }
-    exportData(path);
+    }
+
+    private boolean containsId(int id) {
+        for (Task task : taskList) {
+            if (task.getTaskId() == id) {
+                return true;
+            }
+        }
+        return false;
     }
 
     @Override
