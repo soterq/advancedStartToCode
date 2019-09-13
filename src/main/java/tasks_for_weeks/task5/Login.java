@@ -6,7 +6,7 @@ import tasks_for_weeks.task5.exception.UserNotFound;
 import tasks_for_weeks.task5.objects.Person;
 
 public class Login {
-    private TaskReporter taskReporter = new TaskReporterImpl();
+    private TaskReporter taskReporter;
 
     private String userName;
     private String password;
@@ -14,6 +14,7 @@ public class Login {
     public Login(String userName, String password) {
         this.userName = userName;
         this.password = password;
+        taskReporter = TaskReporterImpl.getInstance();
     }
 
 
