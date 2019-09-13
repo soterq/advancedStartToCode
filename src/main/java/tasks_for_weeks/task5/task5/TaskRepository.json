@@ -1,0 +1,481 @@
+[ {
+  "Id" : 4,
+  "Name" : "Edit company image",
+  "Description" : "change company immgae from all pages",
+  "Priority" : "LOW",
+  "StartDate" : "2019/09/11 13:48:43",
+  "Duration" : {
+    "hour" : 8,
+    "minutes" : 0
+  },
+  "State" : "IN_PROGRESS",
+  "CreatedBy" : {
+    "Id" : 3,
+    "Name" : "John",
+    "Surname" : "Mic",
+    "UserName" : "J_Mic",
+    "Role" : "AUTOMATION_QA",
+    "Department" : "QA",
+    "Password" : "mic1"
+  },
+  "AssignedTo" : {
+    "Id" : 1,
+    "Name" : "Derrick",
+    "Surname" : "Rose",
+    "UserName" : "D_Rose",
+    "Role" : "IT_MANAGER",
+    "Department" : "DEV",
+    "Password" : "qwerty123"
+  },
+  "Notes" : [ {
+    "Id" : 1,
+    "Person" : {
+      "Id" : 3,
+      "Name" : "John",
+      "Surname" : "Mic",
+      "UserName" : "J_Mic",
+      "Role" : "AUTOMATION_QA",
+      "Department" : "QA",
+      "Password" : "mic1"
+    },
+    "Note" : "20 hours is not enough",
+    "Reply" : [ ]
+  } ],
+  "TaskStateHistory" : [ {
+    "PreviousActionDate" : "2019/09/11 13:48:23",
+    "CurrentDate" : "2019/09/11 13:48:43",
+    "ModifiedBy" : {
+      "Id" : 3,
+      "Name" : "John",
+      "Surname" : "Mic",
+      "UserName" : "J_Mic",
+      "Role" : "AUTOMATION_QA",
+      "Department" : "QA",
+      "Password" : "mic1"
+    },
+    "PreviousState" : "CREATED",
+    "CurrentState" : "IN_PROGRESS"
+  } ],
+  "TaskAssignedToHistories" : [ {
+    "CurrentDate" : "2019/09/11 13:49:05",
+    "ModifiedBy" : {
+      "Id" : 3,
+      "Name" : "John",
+      "Surname" : "Mic",
+      "UserName" : "J_Mic",
+      "Role" : "AUTOMATION_QA",
+      "Department" : "QA",
+      "Password" : "mic1"
+    },
+    "PreviousAssignedBy" : {
+      "Id" : 4,
+      "Name" : "Mary",
+      "Surname" : "Jonson",
+      "UserName" : "MarryMe",
+      "Role" : "IT_MANAGER",
+      "Department" : "TEH_SUPPORT",
+      "Password" : "qwe"
+    },
+    "CurrentAssignedBy" : {
+      "Id" : 1,
+      "Name" : "Derrick",
+      "Surname" : "Rose",
+      "UserName" : "D_Rose",
+      "Role" : "IT_MANAGER",
+      "Department" : "DEV",
+      "Password" : "qwerty123"
+    }
+  } ]
+}, {
+  "Id" : 5,
+  "Name" : "Add fax contact",
+  "Description" : "in information page should be company fax number",
+  "Priority" : "LOW",
+  "StartDate" : "2019/09/12 10:38:22",
+  "Duration" : {
+    "hour" : 5,
+    "minutes" : 0
+  },
+  "State" : "CREATED",
+  "CreatedBy" : {
+    "Id" : 2,
+    "Name" : "Ana",
+    "Surname" : "Ursu",
+    "UserName" : "A_Ursu",
+    "Role" : "NETWORK_ADMINISTRATOR",
+    "Department" : "DEV",
+    "Password" : "123456"
+  },
+  "AssignedTo" : {
+    "Id" : 3,
+    "Name" : "John",
+    "Surname" : "Mic",
+    "UserName" : "J_Mic",
+    "Role" : "AUTOMATION_QA",
+    "Department" : "QA",
+    "Password" : "mic1"
+  },
+  "Notes" : [ ],
+  "TaskStateHistory" : [ ],
+  "TaskAssignedToHistories" : [ ]
+}, {
+  "Id" : 2,
+  "Name" : "Logout",
+  "Description" : "User should be able to logout from fis account",
+  "Priority" : "CRITICAL",
+  "StartDate" : "2019/09/11 13:07:55",
+  "Duration" : {
+    "hour" : 20,
+    "minutes" : 30
+  },
+  "State" : "CREATED",
+  "CreatedBy" : {
+    "Id" : 1,
+    "Name" : "Derrick",
+    "Surname" : "Rose",
+    "UserName" : "D_Rose",
+    "Role" : "IT_MANAGER",
+    "Department" : "DEV",
+    "Password" : "qwerty123"
+  },
+  "AssignedTo" : {
+    "Id" : 4,
+    "Name" : "Mary",
+    "Surname" : "Jonson",
+    "UserName" : "MarryMe",
+    "Role" : "IT_MANAGER",
+    "Department" : "TEH_SUPPORT",
+    "Password" : "qwe"
+  },
+  "Notes" : [ ],
+  "TaskStateHistory" : [ ],
+  "TaskAssignedToHistories" : [ {
+    "CurrentDate" : "2019/09/11 13:09:45",
+    "ModifiedBy" : {
+      "Id" : 1,
+      "Name" : "Derrick",
+      "Surname" : "Rose",
+      "UserName" : "D_Rose",
+      "Role" : "IT_MANAGER",
+      "Department" : "DEV",
+      "Password" : "qwerty123"
+    },
+    "PreviousAssignedBy" : {
+      "Id" : 4,
+      "Name" : "Mary",
+      "Surname" : "Jonson",
+      "UserName" : "MarryMe",
+      "Role" : "IT_MANAGER",
+      "Department" : "TEH_SUPPORT",
+      "Password" : "qwe"
+    },
+    "CurrentAssignedBy" : {
+      "Id" : 3,
+      "Name" : "John",
+      "Surname" : "Mic",
+      "UserName" : "J_Mic",
+      "Role" : "AUTOMATION_QA",
+      "Department" : "QA",
+      "Password" : "mic1"
+    }
+  }, {
+    "CurrentDate" : "2019/09/11 13:10:14",
+    "ModifiedBy" : {
+      "Id" : 1,
+      "Name" : "Derrick",
+      "Surname" : "Rose",
+      "UserName" : "D_Rose",
+      "Role" : "IT_MANAGER",
+      "Department" : "DEV",
+      "Password" : "qwerty123"
+    },
+    "PreviousAssignedBy" : {
+      "Id" : 3,
+      "Name" : "John",
+      "Surname" : "Mic",
+      "UserName" : "J_Mic",
+      "Role" : "AUTOMATION_QA",
+      "Department" : "QA",
+      "Password" : "mic1"
+    },
+    "CurrentAssignedBy" : {
+      "Id" : 4,
+      "Name" : "Mary",
+      "Surname" : "Jonson",
+      "UserName" : "MarryMe",
+      "Role" : "IT_MANAGER",
+      "Department" : "TEH_SUPPORT",
+      "Password" : "qwe"
+    }
+  } ]
+}, {
+  "Id" : 1,
+  "Name" : "Login",
+  "Description" : "Login should contains fields for authentication and login button",
+  "Priority" : "CRITICAL",
+  "StartDate" : "2019/09/12 15:06:29",
+  "Duration" : {
+    "hour" : 20,
+    "minutes" : 30
+  },
+  "State" : "CREATED",
+  "CreatedBy" : {
+    "Id" : 1,
+    "Name" : "Derrick",
+    "Surname" : "Rose",
+    "UserName" : "D_Rose",
+    "Role" : "IT_MANAGER",
+    "Department" : "DEV",
+    "Password" : "qwerty123"
+  },
+  "AssignedTo" : {
+    "Id" : 3,
+    "Name" : "John",
+    "Surname" : "Mic",
+    "UserName" : "J_Mic",
+    "Role" : "AUTOMATION_QA",
+    "Department" : "QA",
+    "Password" : "mic1"
+  },
+  "Notes" : [ {
+    "Id" : 1,
+    "Person" : {
+      "Id" : 1,
+      "Name" : "Derrick",
+      "Surname" : "Rose",
+      "UserName" : "D_Rose",
+      "Role" : "IT_MANAGER",
+      "Department" : "DEV",
+      "Password" : "qwerty123"
+    },
+    "Note" : "Need more time for this task!",
+    "Reply" : [ {
+      "Id" : 1,
+      "Person" : {
+        "Id" : 1,
+        "Name" : "Derrick",
+        "Surname" : "Rose",
+        "UserName" : "D_Rose",
+        "Role" : "IT_MANAGER",
+        "Department" : "DEV",
+        "Password" : "qwerty123"
+      },
+      "Note" : "23 hours i think is ok ",
+      "ReplyTo" : {
+        "Id" : 1,
+        "Name" : "Derrick",
+        "Surname" : "Rose",
+        "UserName" : "D_Rose",
+        "Role" : "IT_MANAGER",
+        "Department" : "DEV",
+        "Password" : "qwerty123"
+      }
+    } ]
+  }, {
+    "Id" : 2,
+    "Person" : {
+      "Id" : 1,
+      "Name" : "Derrick",
+      "Surname" : "Rose",
+      "UserName" : "D_Rose",
+      "Role" : "IT_MANAGER",
+      "Department" : "DEV",
+      "Password" : "qwerty123"
+    },
+    "Note" : "25 is ok ?",
+    "Reply" : [ ]
+  } ],
+  "TaskStateHistory" : [ {
+    "PreviousActionDate" : "2019/09/11 13:07:08",
+    "CurrentDate" : "2019/09/11 13:09:12",
+    "ModifiedBy" : {
+      "Id" : 1,
+      "Name" : "Derrick",
+      "Surname" : "Rose",
+      "UserName" : "D_Rose",
+      "Role" : "IT_MANAGER",
+      "Department" : "DEV",
+      "Password" : "qwerty123"
+    },
+    "PreviousState" : "CREATED",
+    "CurrentState" : "IN_PROGRESS"
+  }, {
+    "PreviousActionDate" : "2019/09/11 13:09:12",
+    "CurrentDate" : "2019/09/12 12:53:42",
+    "ModifiedBy" : {
+      "Id" : 1,
+      "Name" : "Derrick",
+      "Surname" : "Rose",
+      "UserName" : "D_Rose",
+      "Role" : "IT_MANAGER",
+      "Department" : "DEV",
+      "Password" : "qwerty123"
+    },
+    "PreviousState" : "IN_PROGRESS",
+    "CurrentState" : "COMPLETED"
+  }, {
+    "PreviousActionDate" : "2019/09/12 12:53:42",
+    "CurrentDate" : "2019/09/12 14:55:45",
+    "ModifiedBy" : {
+      "Id" : 1,
+      "Name" : "Derrick",
+      "Surname" : "Rose",
+      "UserName" : "D_Rose",
+      "Role" : "IT_MANAGER",
+      "Department" : "DEV",
+      "Password" : "qwerty123"
+    },
+    "PreviousState" : "COMPLETED",
+    "CurrentState" : "IN_PROGRESS"
+  }, {
+    "PreviousActionDate" : "2019/09/12 14:55:45",
+    "CurrentDate" : "2019/09/12 15:06:29",
+    "ModifiedBy" : {
+      "Id" : 1,
+      "Name" : "Derrick",
+      "Surname" : "Rose",
+      "UserName" : "D_Rose",
+      "Role" : "IT_MANAGER",
+      "Department" : "DEV",
+      "Password" : "qwerty123"
+    },
+    "PreviousState" : "IN_PROGRESS",
+    "CurrentState" : "CREATED"
+  } ],
+  "TaskAssignedToHistories" : [ {
+    "CurrentDate" : "2019/09/11 13:33:15",
+    "ModifiedBy" : {
+      "Id" : 1,
+      "Name" : "Derrick",
+      "Surname" : "Rose",
+      "UserName" : "D_Rose",
+      "Role" : "IT_MANAGER",
+      "Department" : "DEV",
+      "Password" : "qwerty123"
+    },
+    "PreviousAssignedBy" : {
+      "Id" : 3,
+      "Name" : "John",
+      "Surname" : "Mic",
+      "UserName" : "J_Mic",
+      "Role" : "AUTOMATION_QA",
+      "Department" : "QA",
+      "Password" : "mic1"
+    },
+    "CurrentAssignedBy" : {
+      "Id" : 4,
+      "Name" : "Mary",
+      "Surname" : "Jonson",
+      "UserName" : "MarryMe",
+      "Role" : "IT_MANAGER",
+      "Department" : "TEH_SUPPORT",
+      "Password" : "qwe"
+    }
+  }, {
+    "CurrentDate" : "2019/09/11 13:33:22",
+    "ModifiedBy" : {
+      "Id" : 1,
+      "Name" : "Derrick",
+      "Surname" : "Rose",
+      "UserName" : "D_Rose",
+      "Role" : "IT_MANAGER",
+      "Department" : "DEV",
+      "Password" : "qwerty123"
+    },
+    "PreviousAssignedBy" : {
+      "Id" : 4,
+      "Name" : "Mary",
+      "Surname" : "Jonson",
+      "UserName" : "MarryMe",
+      "Role" : "IT_MANAGER",
+      "Department" : "TEH_SUPPORT",
+      "Password" : "qwe"
+    },
+    "CurrentAssignedBy" : {
+      "Id" : 3,
+      "Name" : "John",
+      "Surname" : "Mic",
+      "UserName" : "J_Mic",
+      "Role" : "AUTOMATION_QA",
+      "Department" : "QA",
+      "Password" : "mic1"
+    }
+  } ]
+}, {
+  "Id" : 6,
+  "Name" : "test",
+  "Description" : "test desccription",
+  "Priority" : "MEDIUM",
+  "StartDate" : "2019/09/12 13:45:05",
+  "Duration" : {
+    "hour" : 2,
+    "minutes" : 0
+  },
+  "State" : "CREATED",
+  "CreatedBy" : {
+    "Id" : 2,
+    "Name" : "Ana",
+    "Surname" : "Ursu",
+    "UserName" : "A_Ursu",
+    "Role" : "NETWORK_ADMINISTRATOR",
+    "Department" : "DEV",
+    "Password" : "123456"
+  },
+  "AssignedTo" : {
+    "Id" : 3,
+    "Name" : "John",
+    "Surname" : "Mic",
+    "UserName" : "J_Mic",
+    "Role" : "AUTOMATION_QA",
+    "Department" : "QA",
+    "Password" : "mic1"
+  },
+  "Notes" : [ {
+    "Id" : 1,
+    "Person" : {
+      "Id" : 2,
+      "Name" : "Ana",
+      "Surname" : "Ursu",
+      "UserName" : "A_Ursu",
+      "Role" : "NETWORK_ADMINISTRATOR",
+      "Department" : "DEV",
+      "Password" : "123456"
+    },
+    "Note" : "test",
+    "Reply" : [ ]
+  } ],
+  "TaskStateHistory" : [ ],
+  "TaskAssignedToHistories" : [ ]
+}, {
+  "Id" : 7,
+  "Name" : "test",
+  "Description" : "test description",
+  "Priority" : "MEDIUM",
+  "StartDate" : "2019/09/13 09:16:22",
+  "Duration" : {
+    "hour" : 2,
+    "minutes" : 0
+  },
+  "State" : "CREATED",
+  "CreatedBy" : {
+    "Id" : 1,
+    "Name" : "Derrick",
+    "Surname" : "Rose",
+    "UserName" : "D_Rose",
+    "Role" : "IT_MANAGER",
+    "Department" : "DEV",
+    "Password" : "qwerty123"
+  },
+  "AssignedTo" : {
+    "Id" : 1,
+    "Name" : "Derrick",
+    "Surname" : "Rose",
+    "UserName" : "D_Rose",
+    "Role" : "IT_MANAGER",
+    "Department" : "DEV",
+    "Password" : "qwerty123"
+  },
+  "Notes" : [ ],
+  "TaskStateHistory" : [ ],
+  "TaskAssignedToHistories" : [ ]
+} ]
