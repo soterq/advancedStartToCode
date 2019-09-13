@@ -13,7 +13,7 @@
   "UserName" : "A_Ursu",
   "Role" : "NETWORK_ADMINISTRATOR",
   "Department" : "DEV",
-  "Password" : "123456"
+  "Password" : "123"
 }, {
   "Id" : 3,
   "Name" : "John",
@@ -21,7 +21,7 @@
   "UserName" : "J_Mic",
   "Role" : "AUTOMATION_QA",
   "Department" : "QA",
-  "Password" : "mic123"
+  "Password" : "mic1"
 }, {
   "Id" : 4,
   "Name" : "Mary",

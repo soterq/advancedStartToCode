@@ -16,7 +16,8 @@ public class Login {
         this.password = password;
     }
 
-   public void login() throws Exception {
+
+    public void login() throws Exception {
         String personPath = "C:/Users/vitalies/IdeaProjects/testing/src/main/java/tasks_for_weeks/task5/Persons.json";
         taskReporter.loadPersonData(personPath);
         Person person = taskReporter.loginVerification(userName);
@@ -35,4 +36,5 @@ public class Login {
             employeeAccount.employeeInterface();
         }
     }
+
 }

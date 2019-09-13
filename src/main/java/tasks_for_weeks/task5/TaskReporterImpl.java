@@ -491,9 +491,9 @@ public class TaskReporterImpl implements TaskReporter {
     @Override
     public void importTaskData(String path) throws Exception {
         ObjectMapper mapper = new ObjectMapper();
-        List<Task> importedtask;
+        List<Task> importedTasks;
         try {
-            importedtask = mapper.readValue(new File(path), new TypeReference<List<Task>>() {
+            importedTasks = mapper.readValue(new File(path), new TypeReference<List<Task>>() {
             });
         } catch (JsonMappingException e) {
             log.error("Json file from '" + path + "' is broken ");
@@ -501,7 +501,6 @@ public class TaskReporterImpl implements TaskReporter {
         } catch (FileNotFoundException e) {
             throw new IllegalActionException("Impossible to lod data from file, file with path '" + path + "' do not exist \n" + e);
         }
-
         Scanner scn = new Scanner(System.in);
         System.out.println("Some imported task can have the same id with task which is already present\n"
                 + "We can generate new id for imported task\n" +
@@ -509,8 +508,8 @@ public class TaskReporterImpl implements TaskReporter {
                 "1 - Yes\n2 - No");
         int option = scn.nextInt();
         if (option == 1) {
-            for (Task task : importedtask) {
-                if (containsId(task.getTaskId())) {
+            for (Task task : importedTasks) {
+                if (containsTaskId(task.getTaskId())) {
                     task.setTaskId(generateId());
                     taskList.add(task);
                 } else {
@@ -518,26 +517,32 @@ public class TaskReporterImpl implements TaskReporter {
                 }
             }
         } else {
-            taskList.addAll(importedtask);
+            taskList.addAll(importedTasks);
         }
 
     }
 
-    private void regenerateId() {
-        for (int i = 0; i < taskList.size(); i++) {
-            for (int j = 0; j < taskList.size(); j++) {
-                if (i != j) {
-                    if (taskList.get(i).getTaskId() == taskList.get(j).getTaskId()) {
-                        taskList.get(j).setTaskId(generateId());
-                    }
-                }
-            }
-        }
-    }
-
-    private boolean containsId(int id) {
+    private boolean containsTaskId(int id) {
         for (Task task : taskList) {
             if (task.getTaskId() == id) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    private boolean containsPersonId(int id) {
+        for (Person person : personList) {
+            if (person.getId() == id) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    private boolean containsUsername(String username) {
+        for (Person person : personList) {
+            if (person.getUserName().equals(username)) {
                 return true;
             }
         }
@@ -558,35 +563,84 @@ public class TaskReporterImpl implements TaskReporter {
             throw new IllegalActionException("Impossible to lod data from file, file with path '" + path + "' does not exist \n" + e);
         }
         Scanner scn = new Scanner(System.in);
-        for (Person importedPerson : importedPersons) {
-            for (Person currentPerson : personList) {
-                if (importedPerson.getId() == currentPerson.getId()) {
-                    System.out.println("Person with id " + importedPerson.getId() + " is already present in person list, and can not be added because id should be unique\n" +
-                            "We can generate another id for current person \n" +
-                            "Do you want to generate new id for current person" +
-                            "1 - Yes\n2 - No");
-                    int option = scn.nextInt();
-                    if (option == 1) {
-                        currentPerson.setId(generateId());
-                        personList.add(importedPerson);
-                    } else {
-                        System.out.println("Person was not added");
+        System.out.println("Some imported persons can have the same id and username with persons which is already present\n"
+                + "We can generate new id and username for imported persons\n" +
+                "Do you want to generate new id and username for persons who is repeated\n" +
+                "1 - Yes\n2 - No");
+        int option = scn.nextInt();
+        if (option == 1) {
+            for (Person person : importedPersons) {
+                if (containsPersonId(person.getId())) {
+                    person.setId(generatePersonId());
+                }
+                if (containsUsername(person.getUserName())) {
+                    person.setUserName(person.getUserName() + random());
+                }
+                personList.add(person);
+            }
+
+        } else {
+            personList.addAll(importedPersons);
+        }
+
+//        for (Person importedPerson : importedPersons) {
+//            for (Person currentPerson : personList) {
+//                if (importedPerson.getId() == currentPerson.getId()) {
+//                    System.out.println("Person with id " + importedPerson.getId() + " is already present in person list, and can not be added because id should be unique\n" +
+//                            "We can generate another id for current person \n" +
+//                            "Do you want to generate new id for current person" +
+//                            "1 - Yes\n2 - No");
+//                    int option = scn.nextInt();
+//                    if (option == 1) {
+//                        currentPerson.setId(generateId());
+//                        personList.add(importedPerson);
+//                    } else {
+//                        System.out.println("Person was not added");
+//                    }
+//                } else if (importedPerson.getUserName().equals(currentPerson.getUserName())) {
+//                    System.out.println("Person with username" + importedPerson.getUserName() + " is already in in person list, and can not be added because username should be unique" +
+//                            "We can generate random number after current username and current username will be different from existing username \n" +
+//                            "Do you want to generate new username for current person" +
+//                            "1 - Yes\n2 - No");
+//                    int option = scn.nextInt();
+//                    if (option == 1) {
+//                        String username = currentPerson.getUserName() + random();
+//                        currentPerson.setUserName(username);
+//                        System.out.println("New username is : " + username);
+//                    } else {
+//                        System.out.println("Person was not added");
+//                    }
+//                } else {
+//                    personList.add(importedPerson);
+//                }
+//            }
+//        }
+    }
+
+    @Override
+    public void personIdAndUsernameReorganization() {
+        for (int i = 0; i < personList.size(); i++) {
+            for (int j = 0; j < personList.size(); j++) {
+                if (i != j) {
+                    if (personList.get(i).getId() == personList.get(j).getId()) {
+                        personList.get(j).setId(generatePersonId());
                     }
-                } else if (importedPerson.getUserName().equals(currentPerson.getUserName())) {
-                    System.out.println("Person with username" + importedPerson.getUserName() + " is already in in person list, and can not be added because username should be unique" +
-                            "We can generate random number after current username and current username will be different from existing username \n" +
-                            "Do you want to generate new username for current person" +
-                            "1 - Yes\n2 - No");
-                    int option = scn.nextInt();
-                    if (option == 1) {
-                        String username = currentPerson.getUserName() + random();
-                        currentPerson.setUserName(username);
-                        System.out.println("New username is : " + username);
-                    } else {
-                        System.out.println("Person was not added");
+                    if (personList.get(i).getUserName().equals(personList.get(j).getUserName())) {
+                        personList.get(j).setUserName(personList.get(j).getUserName() + random());
                     }
-                } else {
-                    personList.add(importedPerson);
+                }
+            }
+        }
+    }
+
+    @Override
+    public void tasksIdReorganization() {
+        for (int i = 0; i < taskList.size(); i++) {
+            for (int j = 0; j < taskList.size(); j++) {
+                if (i != j) {
+                    if (taskList.get(i).getTaskId() == taskList.get(j).getTaskId()) {
+                        taskList.get(j).setTaskId(generateId());
+                    }
                 }
             }
         }
@@ -614,6 +668,11 @@ public class TaskReporterImpl implements TaskReporter {
             log.error("Json file from '" + path + "' do not exist");
             throw new IllegalActionException("Impossible to export data, this path '" + path + "' does not exist \n" + e);
         }
+    }
+
+
+    public void restorePassword(Person person, String password) {
+        person.setPassword(password);
     }
 
     public void showDescription(int id) {

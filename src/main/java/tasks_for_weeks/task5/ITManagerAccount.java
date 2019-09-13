@@ -22,7 +22,8 @@ class ITManagerAccount {
                 "19 View list of State changes for task     " + "20 View notes from specific task            " + "21 View reply note from specific task\n" +
                 "22 View task by status                     " + "23 Export task list                         " + "24 Import task list\n" +
                 "25  Logout                                 " + "25 Export Persons data                      " + "26 Import Person data\n" +
-                "27 Change password" + "                         0 Exist  ";
+                "27 Change password                         " + "28 Task list reorganization                 " + "29 Person list reorganization\n" +
+                "0 Exit";
         while (!quit) {
             System.out.println("\n" + menu);
             System.out.print("\nChoose an option: ");
@@ -107,6 +108,12 @@ class ITManagerAccount {
                     break;
                 case 27:
                     itManagerBaseAccount.changePassword();
+                case 28:
+                    itManagerBaseAccount.tasksIdReorganization();
+                    break;
+                case 29:
+                    itManagerBaseAccount.personIdAndUsernameReorganization();
+                    break;
                 case 0:
                     quit = true;
                     break;

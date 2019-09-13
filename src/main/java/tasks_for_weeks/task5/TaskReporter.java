@@ -93,4 +93,9 @@ public interface TaskReporter {
 
     void exportPersonData(String path) throws Exception;
 
+    void personIdAndUsernameReorganization();
+
+    void tasksIdReorganization();
+
+    void restorePassword(Person person, String password);
 }

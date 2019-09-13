@@ -10,7 +10,6 @@ import tasks_for_weeks.task5.objects.TaskStateHistory;
 
 import java.util.List;
 
-
 public class ITManagerBaseAccount extends EmployeeBaseAccount {
     ITManagerBaseAccount(String username) throws Exception {
         super(username);
@@ -114,7 +113,7 @@ public class ITManagerBaseAccount extends EmployeeBaseAccount {
         }
     }
 
-     void addPerson() throws Exception {
+    void addPerson() throws Exception {
         System.out.print("Enter person name");
         String personName = getScanner().nextLine();
         if (personName.isEmpty()) {
@@ -195,7 +194,7 @@ public class ITManagerBaseAccount extends EmployeeBaseAccount {
         getTaskReporter().exportPersonData(getPersonPath());
     }
 
-     void deletePerson() throws Exception {
+    void deletePerson() throws Exception {
         System.out.print("Enter person userName");
         String userName = getScanner().nextLine();
         if (userName == null) {
@@ -335,7 +334,7 @@ public class ITManagerBaseAccount extends EmployeeBaseAccount {
         getTaskReporter().exportData(getPath());
     }
 
-     void exportPersonData() throws Exception {
+    void exportPersonData() throws Exception {
         System.out.print("Enter path to file please !");
         String pathToExport = getScanner().nextLine();
         if (pathToExport == null || pathToExport.isEmpty()) {
@@ -343,15 +342,43 @@ public class ITManagerBaseAccount extends EmployeeBaseAccount {
             return;
         }
         getTaskReporter().exportPersonData(pathToExport);
+
     }
 
-     void importPersonData() throws Exception {
+    void importPersonData() throws Exception {
         System.out.print("Enter path to file please !");
         String pathToImport = getScanner().nextLine();
         if (pathToImport == null || pathToImport.isEmpty()) {
             System.out.println("Can not import file if path to file is empty");
             return;
         }
-        getTaskReporter().loadPersonData(pathToImport);
+        getTaskReporter().importPersonData(pathToImport);
+        getTaskReporter().exportPersonData(getPersonPath());
+    }
+
+    void personIdAndUsernameReorganization() throws Exception {
+        System.out.print("After this process every person with duplicated id will have new id and every person with duplicated username will have new username\n" +
+                "Do you want to reorganize persons collection ?\n" +
+                "1 - Yes\n2 - No");
+        int response = getScanner().nextInt();
+        if (response == 1) {
+            getTaskReporter().personIdAndUsernameReorganization();
+            getTaskReporter().exportPersonData(getPersonPath());
+        } else {
+            System.out.println("Process is successful cancelled");
+        }
+    }
+
+    void tasksIdReorganization() throws Exception {
+        System.out.print("After this process every task with duplicated id will have new id\n" +
+                "Do you want to reorganize task collection ?\n" +
+                "1 - Yes\n2 - No");
+        int response = getScanner().nextInt();
+        if (response == 1) {
+            getTaskReporter().tasksIdReorganization();
+            getTaskReporter().exportData(getPath());
+        } else {
+            System.out.println("Process is successful cancelled");
+        }
     }
 }

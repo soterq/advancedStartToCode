@@ -96,6 +96,9 @@ class EmployeeAccount {
                     break;
                 case 23:
                     employeeBaseAccount.changePassword();
+                    break;
+                case 24:
+
                 case 0:
                     quit = true;
                     break;
