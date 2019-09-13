@@ -1,0 +1,13 @@
+
+2. Create a class called Employee that includes the following information as instance variables - first name, last name, age , monthly salary.
+Your class should have another constructor that initializes the instances variables and assumes that the values provided are correct.
+If the monthly salary is not positive, set it to 0.0.
+Provide a method toString() that display employee information: "Full Name: ? Age: ? Monthly Salary: ?".
+Provide a method haveSameAgeAndSalary(another_employee) that will return True if comparing 2 employees they have same age and salary.
+Create two Employee objects and display each object’s yearly salary.
+Then give each Employee a 10% raise and display each Employee’s yearly salary again.
+Compare two employees and display comparison result.
+Create a list that will contains 10 Employees.
+From current list of employees find employees with minimal and maximal monthly salary and display employee information.
+From current list of employees calculate the average age of employees.
+

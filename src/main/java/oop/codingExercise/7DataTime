@@ -1,0 +1,8 @@
+1. Create a class called DateTime that includes the following information as instance variables — month, day, year, hours, minutes, seconds.
+Your class should have a constructor that initializes the instances variables and assumes that the values provided are correct.
+Provide setter and getter method for each instance variable.
+Provide a method displayDate() that displays the date format "dd/mm/yyyy".
+Provide a method displayTime() that displays the time format "HH:mm:ss".
+Provide a method toString() that display date and time using specified formats.
+Provide a static method getCurrentDateTime() that will use System.currentTimeMillis() method to calculate current date and current time and return and object of type DateTime.
+Write a array.test application named DateTest that demonstrates class DateTime capabilities.

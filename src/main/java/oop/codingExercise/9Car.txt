@@ -1,0 +1,19 @@
+3. Create a super class called Car. The Car class has the following fields and array.methods
+    - speed
+    - color
+    - realPrice
+    - getSalePrice()
+    - toString()
+Create a sub class of Car class and name it as Truck. The Truck class should have the following fields and array.methods:
+    - weight
+    - getSalePrice() // if weight > 2000, 20% discount otherwise 10% discount
+Create a subclass of Car class and name it as Ford. The Ford class has the following fields and array.methods:
+    - year
+    - manufacturerDiscount
+    - getSalePrice() // from the sale price substract manufacturerDiscount
+Create a subclass of Car class and name it as Sedan. The Sedan class has the following fields and array.methods:
+    - length
+    - getSalePrice() // if length > 4 meters, 5% discount otherwise 10% discount
+Create AutoShop class which contains the main() method.
+Create a list of cars and add to the list min 2 objects of each car type.
+For each car type in the list display sale price and car description (the description should include all the information about the car).
