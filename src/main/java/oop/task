@@ -1,0 +1,50 @@
+Udemy course: https://www.udemy.com/java-the-complete-java-developer-course/learn/lecture/3303188#overview
+User : boaz.grossman@gmail.com
+Pass: boaz1234
+
+1.	Learn Section 6: OOP Part 1 and Section 7: OOP Part 2
+2.	Do all Coding Exercises that you will find in Sections 6 and 7.
+3.	After that complete the following tasks:
+
+(Deadline is tomorrow midday)
+
+1. Create a class called DateTime that includes the following information as instance variables — month, day, year, hours, minutes, seconds. 
+Your class should have a constructor that initializes the instances variables and assumes that the values provided are correct. 
+Provide setter and getter method for each instance variable. 
+Provide a method displayDate() that displays the date format "dd/mm/yyyy".
+Provide a method displayTime() that displays the time format "HH:mm:ss".
+Provide a method toString() that display date and time using specified formats.
+Provide a static method getCurrentDateTime() that will use System.currentTimeMillis() method to calculate current date and current time and return and object of type DateTime.
+Write a test application named DateTest that demonstrates class DateTime capabilities.
+
+2. Create a class called Employee that includes the following information as instance variables - first name, last name, age , monthly salary.
+Your class should have another constructor that initializes the instances variables and assumes that the values provided are correct.
+If the monthly salary is not positive, set it to 0.0.
+Provide a method toString() that display employee information: "Full Name: ? Age: ? Monthly Salary: ?".
+Provide a method haveSameAgeAndSalary(another_employee) that will return True if comparing 2 employees they have same age and salary.
+Create two Employee objects and display each object’s yearly salary.
+Then give each Employee a 10% raise and display each Employee’s yearly salary again.
+Compare two employees and display comparison result.
+Create a list that will contains 10 Employees.
+From current list of employees find employees with minimal and maximal monthly salary and display employee information.
+From current list of employees calculate the average age of employees.
+
+3. Create a super class called Car. The Car class has the following fields and methods
+- speed
+- color
+- realPrice
+- getSalePrice()
+- toString()
+Create a sub class of Car class and name it as Truck. The Truck class should have the following fields and methods:
+- weight
+- getSalePrice() // if weight > 2000, 20% discount otherwise 10% discount
+Create a subclass of Car class and name it as Ford. The Ford class has the following fields and methods:
+- year
+- manufacturerDiscount
+- getSalePrice() // from the sale price substract manufacturerDiscount
+Create a subclass of Car class and name it as Sedan. The Sedan class has the following fields and methods:
+- length
+- getSalePrice() // if length > 4 meters, 5% discount otherwise 10% discount
+Create AutoShop class which contains the main() method.
+Create a list of cars and add to the list min 2 objects of each car type.
+For each car type in the list display sale price and car description (the description should include all the information about the car).
